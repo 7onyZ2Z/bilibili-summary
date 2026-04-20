@@ -1,0 +1,23 @@
+---
+标题: "{{ metadata.title }}"
+来源链接: "{{ metadata.source_url }}"
+---
+
+## 八股板块
+
+{{ summary.bagu_topic }}
+
+## 核心知识点
+
+{% for point in summary.key_points %}
+- {{ point }}
+{% endfor %}
+
+## 面试高频问答
+
+{% for qa in summary.interview_qas %}
+### Q{{ loop.index }}: {{ qa.question }}
+
+A: {{ qa.answer }}
+
+{% endfor %}

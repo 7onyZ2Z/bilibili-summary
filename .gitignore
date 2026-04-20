@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+backend/output/*.md
+backend/output/*.pdf
+backend/work/
+frontend/node_modules/
+frontend/dist/
+.claude/
+*.pem
+*.key
